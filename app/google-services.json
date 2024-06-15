@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "67329712900",
+    "project_id": "pokemon-base-fe9a6",
+    "storage_bucket": "pokemon-base-fe9a6.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:67329712900:android:40c5bdd7b6cbcdd795e651",
+        "android_client_info": {
+          "package_name": "com.mexiti.pokecards"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8DsW9qUyXKD3d7bJOQkxM0Fi16BPjdeY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

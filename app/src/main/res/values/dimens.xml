@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="space_component">10dp</dimen>
+    <dimen name="padding_component">7dp</dimen>
+    <dimen name="width_size">400dp</dimen>
+    <dimen name="height_size">200dp</dimen>
+</resources>

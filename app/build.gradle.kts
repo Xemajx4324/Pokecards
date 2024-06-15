@@ -1,14 +1,18 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+
+    id("com.google.gms.google-services")
 }
 
 android {
-    namespace = "com.mexiti.foodcal"
+    // CAMBIO 1: El nuevo nombre del paquete
+    namespace = "com.mexiti.pokecards"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.mexiti.foodcal"
+        // CAMBIO 2: El ID de la aplicación
+        applicationId = "com.mexiti.pokecards"
         minSdk = 26
         targetSdk = 34
         versionCode = 1
@@ -50,7 +54,7 @@ android {
 }
 
 dependencies {
-
+    // Librerías base que ya teníamos
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
@@ -60,6 +64,18 @@ dependencies {
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.ui.text.google.fonts)
     implementation(libs.androidx.material3.android)
+
+    // --- NUEVAS LIBRERÍAS NECESARIAS ---
+
+    // 1. Firebase (Base de datos)
+    implementation(platform("com.google.firebase:firebase-bom:32.7.0"))
+    implementation("com.google.firebase:firebase-firestore")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.8.0")
+
+    // 2. Coil (Para cargar imágenes de Internet/ImgBB)
+    implementation("io.coil-kt:coil-compose:2.5.0")
+
+    // Testing
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
