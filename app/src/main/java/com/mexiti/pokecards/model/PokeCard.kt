@@ -18,3 +18,5 @@ data class PokeCard(
 
     val timestamp: Long = System.currentTimeMillis() // Fecha de obtención (Tipo Long)
 )
+
+// este es un mensaje para checar si el commit funciono no hacerle caso hola mundo
